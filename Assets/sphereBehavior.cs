@@ -28,9 +28,9 @@ public class sphereBehavior : MonoBehaviour
       }
 
       if (isMovingRight) {
-         rb.velocity = new Vector3 (speed, 0f, 0f);
+         rb.velocity = new Vector3 (-speed, 0f, 0f);
       } else {
-         rb.velocity = new Vector3 (0f, 0f, speed);
+         rb.velocity = new Vector3 (0f, 0f, -speed);
       }
 
    }

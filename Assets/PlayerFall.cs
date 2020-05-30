@@ -7,11 +7,9 @@ public class PlayerFall : MonoBehaviour
 
    private Rigidbody rb;
 
-   void Start() {
-
-      rb = GetComponent<Rigidbody> ();
-
-   }
+   	void Start() {
+    	rb = GetComponent<Rigidbody> ();
+   	}
 
    void Update() {
 
