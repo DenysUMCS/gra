@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\cameraFollow.cs" />
+     <Compile Include="Assets\GrassRoadRace\Script\CameraMove.cs" />
      <Compile Include="Assets\jump.cs" />
      <Compile Include="Assets\PlayerFall.cs" />
      <Compile Include="Assets\RoadBehaviour.cs" />

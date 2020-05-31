@@ -14,7 +14,7 @@ public class PlayerFall : MonoBehaviour
    void Update() {
 
       RaycastHit hit;
-      if(Physics.Raycast (transform.position, Vector3.down, out hit, 5f) && hit.transform.gameObject.tag == "Ground") {
+      if(Physics.Raycast (transform.position, Vector3.down, out hit, 15f) && hit.transform.gameObject.tag == "Ground") {
          rb.useGravity = false;
       } else {
          rb.useGravity = true;
