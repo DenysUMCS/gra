@@ -840,7 +840,7 @@ AudioSource:
       outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0.002
+      value: 0
       inSlope: -0.002000801
       outSlope: -0.002000801
       tangentMode: 0
@@ -903,7 +903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720600353}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2687931, y: 1.4146256, z: 1.3459771}
+  m_LocalPosition: {x: 1.2687931, y: 1.77, z: 0.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
