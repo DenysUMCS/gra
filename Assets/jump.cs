@@ -19,8 +19,8 @@ public class jump : MonoBehaviour
  		float hmove = Input.GetAxis("Horizontal");
       	float vmove = Input.GetAxis("Vertical");
         Vector3 ballmove = new Vector3(hmove,0.0f,vmove);
- 		if(Input.GetKey(KeyCode.Space)){
- 			Vector3 balljump = new Vector3(0.0f,6.0f,0.0f);
+ 		if(Input.GetKey(KeyCode.Space) && rb && rb.position.y<1.1f){
+ 			Vector3 balljump = new Vector3(0.0f,80.0f,0.0f);
          	rb.AddForce(balljump*jumpspeed);
       	}
   	}

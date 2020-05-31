@@ -59,6 +59,7 @@
      <Compile Include="Assets\PlayerFall.cs" />
      <Compile Include="Assets\RoadBehaviour.cs" />
      <Compile Include="Assets\sphereBehavior.cs" />
+     <None Include="Assets\Casual Jingles - 022420\Notes.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/marsk/gra/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

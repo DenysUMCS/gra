@@ -23,9 +23,9 @@ public class sphereBehavior : MonoBehaviour
       }
       //score_info.text = "Score : "+"asdfs";
       if (isMovingRight) {
-         rb.velocity = new Vector3 (-ballspeed*1.01f, 0f, 0f);
+         rb.velocity = new Vector3 (-ballspeed, 0f, 0f);
       } else {
-         rb.velocity = new Vector3 (0f, 0f, -ballspeed*1.01f);
+         rb.velocity = new Vector3 (0f, 0f, -ballspeed);
       }
 
    }

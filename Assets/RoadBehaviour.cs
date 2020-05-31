@@ -11,7 +11,8 @@ public class RoadBehaviour : MonoBehaviour
 	public GameObject left_road_end; // Префаб участка пути
 	public GameObject right_road_end;
 	public GameObject road_90;
-
+	public GameObject block_road_90;
+	public GameObject block_road;
 	private int next_el = 0;
 	private int cur_el = 0;
 	private int prev_el = 0;
@@ -36,7 +37,9 @@ public class RoadBehaviour : MonoBehaviour
   	Debug.Log(cur_el.ToString()+" "+next_el.ToString());
   	GameObject _platform ;//
     if(next_el==1 && cur_el==1){
-    	_platform = Instantiate (road_90) as GameObject;
+    	if(Random.Range (0, 20)==7)
+    		_platform = Instantiate (block_road_90) as GameObject;
+    	else _platform = Instantiate (road_90) as GameObject;
     	_platform.transform.position = lastpos + new Vector3 (0f,0f,-1f);
     }
     else if(next_el==1 && cur_el==0){
@@ -48,7 +51,9 @@ public class RoadBehaviour : MonoBehaviour
     	_platform.transform.position = lastpos + new Vector3 (0f,0f,-1f);
     }
     else {//else if(next_el==0 && cur_el==0){
-    	_platform = Instantiate (road) as GameObject;
+    	if(Random.Range (0, 20)==7)
+    		_platform = Instantiate (block_road) as GameObject;
+    	else _platform = Instantiate (road) as GameObject;
     	_platform.transform.position = lastpos + new Vector3 (-1f,0f,0f);
     }    
 
