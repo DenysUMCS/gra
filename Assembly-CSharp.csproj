@@ -56,11 +56,12 @@
      <Compile Include="Assets\cameraFollow.cs" />
      <Compile Include="Assets\GrassRoadRace\Script\CameraMove.cs" />
      <Compile Include="Assets\jump.cs" />
-     <Compile Include="Assets\Pause.cs" />
+     <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\PlayerFall.cs" />
      <Compile Include="Assets\RoadBehaviour.cs" />
      <Compile Include="Assets\ScoreScript.cs" />
      <Compile Include="Assets\sphereBehavior.cs" />
+     <Compile Include="Assets\VolumeControle.cs" />
      <None Include="Assets\Casual Jingles - 022420\Notes.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/marsk/gra_last/gra/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

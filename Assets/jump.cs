@@ -21,8 +21,8 @@ public class jump : MonoBehaviour
         RaycastHit hit;
         Vector3 ballmove = new Vector3(hmove,0.0f,vmove);
         if(Physics.Raycast (transform.position, Vector3.down, out hit, 5f) && hit.transform.gameObject.tag == "Ground") 
-     		if(Input.GetKey(KeyCode.Space) && rb.position.y<1.05f){
-     			Vector3 balljump = new Vector3(0.0f,80.0f,0.0f);
+     		if(Input.GetKey(KeyCode.Space) && rb.position.y<1.1f){
+     			Vector3 balljump = new Vector3(0.0f,70.0f,0.0f);
              	rb.AddForce(balljump*jumpspeed);
           	}
   	 }
