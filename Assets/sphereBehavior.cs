@@ -21,7 +21,8 @@ public class sphereBehavior : MonoBehaviour
       if(Input.GetMouseButtonDown(0)) {
          changeDirection();
       }
-      //score_info.text = "Score : "+"asdfs";
+      /*if(rb.transform.position.y<0.5)
+         return;*/
       if (isMovingRight) {
          rb.velocity = new Vector3 (-ballspeed, 0f, 0f);
       } else {
