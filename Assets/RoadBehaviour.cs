@@ -37,7 +37,7 @@ public class RoadBehaviour : MonoBehaviour
   	Debug.Log(cur_el.ToString()+" "+next_el.ToString());
   	GameObject _platform ;//
     if(next_el==1 && cur_el==1){
-    	if(Random.Range (0, 20)==7)
+    	if(Random.Range (0, 30)==7)
     		_platform = Instantiate (block_road_90) as GameObject;
     	else _platform = Instantiate (road_90) as GameObject;
     	_platform.transform.position = lastpos + new Vector3 (0f,0f,-1f);
@@ -56,21 +56,6 @@ public class RoadBehaviour : MonoBehaviour
     	else _platform = Instantiate (road) as GameObject;
     	_platform.transform.position = lastpos + new Vector3 (-1f,0f,0f);
     }    
-
-      /*if (next_el == 0 && cur_el==0 && prev_el==0) { // Установить префаб по оси X        
-          _platform = Instantiate (road_90) as GameObject;
-          if(cur_el == 1 && next_el==0)
-         	_platform = Instantiate (right_road_end) as GameObject;
-         else _platform = Instantiate (road_90) as GameObject;
-         _platform.transform.position = lastpos + new Vector3 (-1f,0f,0f);
-
-      } else { // Установить префаб по оси Z
-		 if(cur_el==0 && next_el == 1)
-         	_platform = Instantiate (left_road_end) as GameObject;
-         else _platform = Instantiate (road) as GameObject;
-
-         _platform.transform.position = lastpos + new Vector3 (0f,0f,-1f);
-      }*/
       lastpos = _platform.transform.position;
    }
 }
