@@ -17,7 +17,6 @@ public class PlayerFall : MonoBehaviour
 
       RaycastHit hit;
       Physics.Raycast (transform.position, Vector3.down, out hit, 5f);
-      
       if(Physics.Raycast (transform.position, Vector3.down, out hit, 5f) && hit.transform.gameObject.tag == "Ground") {
         if(last !=hit.rigidbody)
             ScoreScript.scoreVal += 1;
