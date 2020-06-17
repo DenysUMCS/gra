@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class VolumeControle : MonoBehaviour
 {
-    // Start is called before the first frame update
-   	public Audio Sound; 
-    // Update is called once per frame
+	public UnityEngine.UI.Slider slider;
+	public AudioSource volumeAudio;
     void Update()
     {
-        Sound.Volume = Volume;
+    	 volumeAudio.volume = slider.value;  
     }
 }
